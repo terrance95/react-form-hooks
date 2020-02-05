@@ -1,0 +1,22 @@
+{
+  "name": "React Form",
+  "short_name": "React Form",
+  "theme_color": "#09275b",
+  "background_color": "#09275b",
+  "description": "React Form",
+  "icons": [
+    {
+      "src": "images/homescreen192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "landscape",
+  "display": "standalone",
+  "start_url": "./"
+}

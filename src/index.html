@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Progressive Web App Optimizations -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e3e3e3" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="192x192" href="images/homescreen192.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="images/homescreen512.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css" />
+  <title>A Generic React Form</title>
+</head>
+
+<body>
+  <div id="app">The app did render correctly</div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <script src="./index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/serviceWorker.js').then(
+          function (registration) {
+            // Registration was successful
+            console.log(
+              'ServiceWorker registration successful with scope: ',
+              registration.scope
+            );
+          },
+          function (error) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', error);
+          }
+        );
+      });
+    }
+  </script>
+</body>
+
+</html>
